@@ -1,0 +1,10 @@
+server.port: 8082
+spring:
+  datasource:
+    URL: jdbc:h2:mem:prod_database
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2.console.enabled: true
